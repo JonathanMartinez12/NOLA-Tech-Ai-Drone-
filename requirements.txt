@@ -1,0 +1,46 @@
+# AI Grand Prix - Autonomous Drone Racing
+# Dependencies for drone racing autonomy stack
+
+# Core drone communication
+mavsdk>=2.0.0                   # MAVLink SDK for PX4 communication
+
+# Computer vision and perception
+opencv-python>=4.8.0            # Image processing and computer vision
+opencv-contrib-python>=4.8.0    # Additional OpenCV modules (ArUco, etc.)
+ultralytics>=8.0.0              # YOLOv8 for ML-based gate detection (Phase 2+)
+
+# Math and scientific computing
+numpy>=1.24.0                   # Numerical computing, arrays, linear algebra
+scipy>=1.11.0                   # Optimization, Kalman filters, signal processing
+
+# Configuration and data structures
+pydantic>=2.0.0                 # Configuration validation and settings management
+pydantic-settings>=2.0.0        # Environment-based settings
+
+# Async programming
+asyncio-throttle>=1.0.0         # Rate limiting for async operations
+
+# Testing
+pytest>=7.4.0                   # Unit and integration testing
+pytest-asyncio>=0.21.0          # Async test support
+pytest-cov>=4.1.0               # Code coverage
+
+# Development tools
+black>=23.0.0                   # Code formatting
+mypy>=1.5.0                     # Static type checking
+ruff>=0.1.0                     # Fast Python linter
+
+# Logging and debugging
+structlog>=23.0.0               # Structured logging
+rich>=13.0.0                    # Beautiful terminal output
+
+# Data analysis (for telemetry)
+pandas>=2.0.0                   # Data manipulation and analysis
+matplotlib>=3.7.0               # Plotting and visualization
+
+# Jupyter for analysis notebooks
+jupyter>=1.0.0                  # Jupyter notebooks
+ipykernel>=6.25.0               # Jupyter kernel
+
+# Optional: ROS2 integration (install separately via apt)
+# ros2-jazzy packages installed via apt, not pip
